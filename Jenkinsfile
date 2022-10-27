@@ -23,7 +23,7 @@ node {
 
    stage 'test'
    parallel 'test': {
-     sh "${mvnHome}/bin/mvn test; sleep 2;"
+     sh "${mvnHome}/bin/mvn test; sleep 10;"
    }, 'verify': {
      sh "${mvnHome}/bin/mvn verify; sleep 10"
    }
