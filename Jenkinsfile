@@ -25,7 +25,7 @@ node {
    parallel 'test': {
      sh "${mvnHome}/bin/mvn test; sleep 2;"
    }, 'verify': {
-     sh "${mvnHome}/bin/mvn verify; sleep 3"
+     sh "${mvnHome}/bin/mvn verify; sleep 10"
    }
 
    stage 'archive'
